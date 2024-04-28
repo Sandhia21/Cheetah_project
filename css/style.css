@@ -828,6 +828,10 @@ video {
   max-width: 24rem;
 }
 
+.animate-none {
+  animation: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -850,6 +854,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-start {
@@ -1689,6 +1697,10 @@ video {
     height: 630px;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1711,6 +1723,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:justify-start {
