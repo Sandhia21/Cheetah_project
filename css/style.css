@@ -662,16 +662,6 @@ video {
   margin-bottom: 100px;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -756,10 +746,6 @@ video {
   height: 1.25rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -806,10 +792,6 @@ video {
 
 .w-\[250px\] {
   width: 250px;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .w-full {
@@ -922,6 +904,10 @@ video {
 
 .self-start {
   align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -1486,36 +1472,6 @@ video {
   background-color: #f4f4f4;
 }
 
-@media (min-width: 768px) {
-  .md\:container {
-    width: 100%;
-  }
-
-  @media (min-width: 480px) {
-    .md\:container {
-      max-width: 480px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .md\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 976px) {
-    .md\:container {
-      max-width: 976px;
-    }
-  }
-
-  @media (min-width: 1440px) {
-    .md\:container {
-      max-width: 1440px;
-    }
-  }
-}
-
 .before\:rounded-\[25px\]::before {
   content: var(--tw-content);
   border-radius: 25px;
@@ -1592,11 +1548,6 @@ video {
     margin-right: auto;
   }
 
-  .sm\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -1607,10 +1558,6 @@ video {
 
   .sm\:h-\[360px\] {
     height: 360px;
-  }
-
-  .sm\:w-full {
-    width: 100%;
   }
 
   .sm\:grid-cols-3 {
@@ -1651,11 +1598,6 @@ video {
     order: 2;
   }
 
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1685,6 +1627,10 @@ video {
     display: none;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:h-\[360px\] {
     height: 360px;
   }
@@ -1697,24 +1643,16 @@ video {
     height: 630px;
   }
 
-  .md\:h-80 {
-    height: 20rem;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
-  .md\:w-1\/2 {
+  .md\:w-\[50\%\] {
     width: 50%;
   }
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
   }
 
   .md\:grid-cols-3 {
@@ -1759,6 +1697,10 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
   }
 
   .md\:border-0 {
