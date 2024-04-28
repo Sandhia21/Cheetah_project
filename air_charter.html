@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheetah Airline</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Cheetah Airlines Logo (1).png"
+      type="image/x-icon"
+    />
+
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-poppins">
+    <section id="hero-air" class="bg-cover bg-center">
+      <!-- Navbar -->
+      <nav class="bg-transparent border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="assets/Cheetah Airlines Logo (1).png"
+              class="h-14"
+              alt="Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Contact Us
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 px-3 md:p-0 md:text-gray-900 bg-white-700 rounded md:bg-transparent md:text-white-700 me-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="air_charter.html"
+                  class="block py-2 px-3 md:p-0 md:text-white text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >Air Charter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Air Cargo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Private Jet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Presidential Air
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Flight Trip
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="flex items-center justify-center py-20">
+        <div
+          class="container flex flex-col items-center px-6 mx-auto md:space-y-0 h-full"
+        >
+          <h1 class="text-white font-bold text-4xl my-5">Air Charter</h1>
+
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol
+              class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-white"
+            >
+              <li class="inline-flex items-center">
+                <a
+                  href="#"
+                  class="inline-flex items-center font-medium hover:text-blue-600 dark:text-gray-400 dark:hover:text-white text-white text-2xl"
+                >
+                  <i class="bx bxs-home-alt-2"></i>
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <i class="bx bx-chevron-right text-2xl"></i>
+                  <span
+                    class="ms-1 font-medium text-primary md:ms-2 dark:text-gray-400 text-2xl"
+                    >Air Charter</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+    </section>
+
+    <section id="features-air" class="container mx-auto mt-20 rounded">
+      <div
+        class="flex items-center md:justify-between md:flex-row flex-col justify-center gap-10 p-20 text-black h-full overflow-hidden"
+      >
+        <div
+          id="bg-image"
+          class="md:w-1/2 w-full md:h-[630px] h-[260px] bg-cover bg-center"
+        ></div>
+        <div class="md:w-1/2 w-full">
+          <h3
+            class="bg-yellow-400 inline-block px-3 py-2 font-bold rounded text-white mb-3"
+          >
+            AIR CHARTER SERVICES
+          </h3>
+          <p class="text-2xl text-justify">
+            Whether it's comfort that drives you or flexibility, we work
+            tirelessly to ensure your private jet charter experience is
+            faultless.
+            <br />
+            Since then our clients have trusted us to deliver unforgettable air
+            charter experiences.
+            <br />
+            Whether you require a private charter flight, or small or heavy jet
+            or an entire world tour, we'll ensure you and you're party are cared
+            for every step of the way.
+            <br />
+            <span class="text-sm"
+              ><i
+                class="bx bx-check border rounded-full bg-green-800 text-white"
+              ></i>
+              Private Jet</span
+            >
+            <span class="text-sm"
+              ><i
+                class="bx bx-check border rounded-full bg-green-800 text-white"
+              ></i>
+              Business Jet</span
+            >
+            <span class="text-sm"
+              ><i
+                class="bx bx-check border rounded-full bg-green-800 text-white"
+              ></i>
+              Air Ambulance</span
+            >
+          </p>
+
+          <div
+            class="p-3 bg-primary rounded relative overflow-hidden w-full mt-5"
+          >
+            <div
+              class="bg-black h-[80%] w-[20px] rounded-full absolute left-[-10px] top-2"
+            ></div>
+            <div class="px-5 flex items-center justify-between">
+              <!-- left item -->
+              <div class="">
+                <h3 class="">Call for book an order</h3>
+                <a class="">8-800-10-500</a>
+              </div>
+              <!-- right item -->
+              <div class="flex items-center justify-center">
+                <a
+                  href="#"
+                  class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <a
+              href="#"
+              class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center  flex items-center justify-center"
+              >Request More <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="article-about"
+      class="bg-cover bg-center flex items-center justify-around md:justify-between flex-col  px-20 my-20"
+    >
+        <h1 class="text-4xl font-bold text-white bg-primary px-3 py-2 rounded shadow my-5">Latest News From Us</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div id="box-1" class="flex items-center justify-center flex-col hover:rounded shadow-lg hover:text-white py-5">
+            <!-- <h1 class="self-start px-10 text-4xl font-bold">01</h1> -->
+            <h3 class="self-start px-10 text-2xl">Safety &
+              QA</h3>
+            <p class="self-start px-10">Cheetah Airlines places the highest priority on safety
+              and quality assurance. Our rigorous maintenance
+              schedules, experienced aviation professionals, and
+              state-of-the-art facilities ensure that every flight with
+              us is secure and comfortable.</p>
+          </div>
+          <div id="box-2" class="flex items-center justify-center flex-col hover:rounded shadow-lg hover:text-white py-5">
+            <!-- <h1 class="self-start px-10 text-4xl font-bold">02</h1> -->
+            <h3 class="self-start px-10 text-2xl">Corporate Social
+              Responsibility (CSR)</h3>
+            <p class="self-start px-10">Cheetah Airlines is dedicated to giving back to society.
+              We support various CSR initiatives, including education,
+              healthcare, and community development, to
+              make a positive impact on the communities we serve.</p>
+          </div>
+          <div id="box-3" class="flex items-center justify-center flex-col hover:rounded shadow-lg hover:text-white py-5">
+            <!-- <h1 class="self-start px-10 text-4xl font-bold">Sustainability
+              Initiatives</h1> -->
+              <h3 class="self-start px-10 text-2xl">Sustainability
+                Initiatives</h3>
+            <!-- <h3 class="self-start px-10 text-2xl">1</h3> -->
+            <p class="self-start px-10">We recognize our responsibility to the environment
+              and are actively engaged in sustainability initiatives,
+              including reducing emissions, investing in fuel-efficient
+              aircraft, and implementing eco-friendly practices
+              throughout our operations.</p>
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+    </section>
+    <section
+      id="swiper-section"
+      class="container mx-auto my-10 w-full relative flex items-center justify-center flex-col"
+    >
+      <h1 class="flex self-start text-4xl font-bold mb-10">
+        Luxury Deals For You
+      </h1>
+      <!-- Swiper -->
+      <div class="h-full w-full mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[200px] w-[250px] object-cover"
+                  src="assets/plane-img (2).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="py-5 px-2">
+                <a href="#">
+                  <h4
+                    class="mb-2 font-bold tracking-tight text-gray-90e hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h4>
+                </a>
+                <p class="mb-3 font-light text-sm text-gray-700">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span class="text-[10px] w-1/2">8 - 14 Seats</span>
+                  <span class="text-[10px] w-1/2">Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    ><i class="bx bxs-plane bx-rotate-90"></i> Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[200px] w-[250px] object-cover"
+                  src="assets/seats.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="py-5 px-2">
+                <a href="#">
+                  <h4
+                    class="mb-2 font-bold tracking-tight text-gray-90e hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h4>
+                </a>
+                <p class="mb-3 font-light text-sm text-gray-700">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span class="text-[10px] w-1/2">8 - 14 Seats</span>
+                  <span class="text-[10px] w-1/2">Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    ><i class="bx bxs-plane bx-rotate-90"></i> Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[200px] w-[250px] object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="py-5 px-2">
+                <a href="#">
+                  <h4
+                    class="mb-2 font-bold tracking-tight text-gray-90e hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h4>
+                </a>
+                <p class="mb-3 font-light text-sm text-gray-700">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span class="text-[10px] w-1/2">8 - 14 Seats</span>
+                  <span class="text-[10px] w-1/2">Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    ><i class="bx bxs-plane bx-rotate-90"></i> Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[200px] w-[250px] object-cover"
+                  src="assets/plane-img (4).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="py-5 px-2">
+                <a href="#">
+                  <h4
+                    class="mb-2 font-bold tracking-tight text-gray-90e hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h4>
+                </a>
+                <p class="mb-3 font-light text-sm text-gray-700">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span class="text-[10px] w-1/2">8 - 14 Seats</span>
+                  <span class="text-[10px] w-1/2">Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    ><i class="bx bxs-plane bx-rotate-90"></i> Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg h-[200px] w-[250px] object-cover"
+                  src="assets/plane-img (1).jpg"
+                  alt=""
+                />
+              </a>
+              <div class="py-5 px-2">
+                <a href="#">
+                  <h4
+                    class="mb-2 font-bold tracking-tight text-gray-90e hover:text-yellow-200"
+                  >
+                    Private Helicopter
+                  </h4>
+                </a>
+                <p class="mb-3 font-light text-sm text-gray-700">
+                  Charter a A500
+                </p>
+                <div
+                  class="flex items-center justify-between font-light border-b-2 border-gray-500 border-dotted py-3 my-5"
+                >
+                  <span class="text-[10px] w-1/2">8 - 14 Seats</span>
+                  <span class="text-[10px] w-1/2">Price: $9,000/ hr</span>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+                    ><i class="bx bxs-plane bx-rotate-90"></i> Book Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-button-next absolute lg:left-[unset] lg:right-0 lg:top-[20px] text-yellow-500"
+        ></div>
+        <div
+          class="swiper-button-prev absolute lg:left-[unset] lg:right-[50px] lg:top-[20px] text-yellow-500"
+        ></div>
+        <div class="swiper-pagination absolute bottom-[-50px]"></div>
+      </div>
+    </section>
+
+    <footer class="p-4 bg-[#B5C18E] sm:p-6">
+      <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0 flex items-center justify-center">
+            <a href="index.html" class="flex items-center justify-center">
+              <img
+                src="assets/Cheetah Airlines Logo (1).png"
+                class="mr-3 h-[80px] w-full"
+                alt=" Logo"
+              />
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Company</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="index.html" class="hover:underline">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                  <a href="air_charter.html" class="hover:underline"
+                    >Air Charter</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Air Cargo</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Private Jet</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Presidential Air</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Flight Trip</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Github</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Legal
+              </h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center"
+            >© 2024
+            <a href="index.html" class="hover:underline">Cheetah Airlines™</a>.
+            All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-facebook-circle text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-instagram text-2xl"></i>
+            </a>
+
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- flowbite js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        cssMode: true,
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 320px
+          480: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          976: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1440: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+    <!-- js link -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

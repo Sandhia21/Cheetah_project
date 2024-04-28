@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.padding-left {
+  padding-left: 20px;
+}
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: yellow !important;
+}
+
+#hero {
+  /* background-image: url("../assets/bg-hero (2).jpg"); */
+  /* background-color: #ffc94a; */
+  background-color: #b5c18e;
+}
+#hero-about {
+  /* background-image: url("../assets/bg-flight.jpg"); */
+  background-color: #b5c18e;
+}
+#hero-air {
+  /* background-image: url("../assets/bg-flight.jpg"); */
+  background-color: #b5c18e;
+}
+
+#first-card {
+  background-image: url("../assets/plane-img (1).jpg");
+  position: relative;
+  z-index: 1;
+}
+#second-card {
+  background-image: url("../assets/plane-img (2).jpg");
+}
+
+#first-card,
+#second-card,
+#article {
+  position: relative;
+  z-index: 1;
+}
+#first-card::before,
+#second-card::before,
+#article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(205, 210, 82, 0.279);
+  z-index: -1;
+}
+
+#article {
+  background-image: url("../assets/bg-article.png");
+}
+
+#article::before {
+  background-color: #0000007c;
+}
+
+#flight-book-div {
+  background-image: url("../assets/bg-flight.jpg");
+}
+
+#features-about {
+  background-color: #f4f4f4;
+}
+
+#features-about #bg-image {
+  background-image: url("../assets/plane-img (3).jpg");
+}
+
+#box-1,
+#box-2,
+#box-3,
+#box-4,
+#box-5,
+#box-6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#box-1:hover,
+#box-2:hover,
+#box-3:hover,
+#box-4:hover,
+#box-5:hover,
+#box-6:hover {
+  background-image: url("../assets/box-img (2).jpg");
+}
+
+#swiper-section .swiper-slide,
+#swiper-section .swiper-wrapper {
+  height: 400px;
+}
+
+#swiper-section .swiper-horizontal > .swiper-pagination-bullets,
+#swiper-section .swiper-pagination-bullets.swiper-pagination-horizontal,
+#swiper-section .swiper-pagination-custom,
+#swiper-section .swiper-pagination-fraction {
+  bottom: -30px;
+}
+
+#swiper-section .swiper-button-next:after,
+#swiper-section .swiper-button-prev:after {
+  font-size: 16px;
+}
+
+#swiper-section .swiper-button-next,
+#swiper-section .swiper-button-prev {
+  border: 2px solid rgb(234 179 8 / var(--tw-text-opacity));
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+#swiper-section .swiper-button-next:hover,
+#swiper-section .swiper-button-prev:hover {
+  color: #fff;
+  background-color: #f7c566;
+  border-radius: 100%;
+}
+
+#fancy-section {
+  background-image: url("../assets/box-img (1).jpg");
+}
+#fancy-section-about {
+  background-image: url("../assets/box-img (2).jpg");
+}
+
+.circular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: circular-motion 5s linear infinite;
+}
+
+@keyframes circular-motion {
+  0% {
+    transform: translate(-50%, -50%); /* Start position (original position) */
+  }
+  25% {
+    transform: translate(calc(-50% + 150px), -50%); /* Move right */
+  }
+  50% {
+    transform: translate(
+      calc(-50% + 150px),
+      calc(-50% + 150px)
+    ); /* Move down */
+  }
+  75% {
+    transform: translate(-50%, calc(-50% + 150px)); /* Move left */
+  }
+  100% {
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Back to start position (original position) */
+  }
+}
+
+
+#features-air #bg-image {
+  background-image: url("../assets/plane-img (4).jpg");
+}
+
+#features-air {
+  background-color: #f4f4f4;
+}
