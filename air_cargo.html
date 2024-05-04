@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheetah Airline</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Cheetah Airlines Logo (1).png"
+      type="image/x-icon"
+    />
+
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-poppins">
+    <section id="hero-about" class="bg-cover bg-center">
+      <!-- Navbar -->
+      <nav class="bg-transparent border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="assets/Cheetah Airlines Logo (1).png"
+              class="h-14"
+              alt="Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Contact Us
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 px-3 md:p-0 md:text-gray-900 bg-white-700 rounded md:bg-transparent md:text-white-700 me-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 md:p-0 md:text-black text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="air_charter.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >Air Charter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="air_cargo.html"
+                  class="block py-2 px-3 md:p-0 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Air Cargo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Private Jet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="presidential_air.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Presidential Air
+                </a>
+              </li>
+              <li>
+                <a
+                  href="flight_trip.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Flight Trip
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="flex items-center justify-center py-20">
+        <div
+          class="container flex flex-col items-center px-6 mx-auto md:space-y-0 h-full"
+        >
+          <h1 class="text-white font-bold text-4xl my-5 uppercase">
+            Air Cargo
+          </h1>
+
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol
+              class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-white"
+            >
+              <li class="inline-flex items-center">
+                <a
+                  href="#"
+                  class="inline-flex items-center font-medium hover:text-primary text-white text-2xl"
+                >
+                  <i class="bx bxs-home-alt-2"></i>
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <i class="bx bx-chevron-right text-2xl"></i>
+                  <span class="ms-1 font-medium text-white md:ms-2 text-2xl"
+                    >Air Cargo</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+    </section>
+
+    <div
+            class="p-3 bg-primary rounded relative overflow-hidden w-full mt-5"
+          >
+            <div
+              class="bg-black h-[80%] w-[20px] rounded-full absolute left-[-10px] top-2"
+            ></div>
+
+      
+      <div class="px-5 flex items-center justify-between">
+        <p class="text-xl text-justify">
+          At Air Cheetah, we don't just fly you to your destination; we elevate
+          your entire travel experience. Join us on board and let your journey
+          begin in style. Fasten your seatbelt, relax, and prepare for an
+          unforgettable flight with Air Cheetah - where every moment is a
+          celebration of luxury, comfort, and adventure.
+        </p>
+      </div>
+
+    <ol
+      class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400"
+    >
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-2 leading-tight">Speedy Delivery</h3>
+        <p class="text-xl text-justify py-2">
+          In today's fast-paced world, time is of the essence. That's why Air
+          Cheetah is committed to delivering your cargo with unmatched speed.
+          With a network of strategically located hubs and a fleet of
+          state-of-the-art aircraft, we offer some of the fastest transit times
+          in the industry. Whether you're shipping domestically or
+          internationally, you can trust Air Cheetah to get your cargo to its
+          destination on time, every time.
+        </p>
+      </li>
+
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-5 leading-tight">
+          Reliability You Can Count On
+        </h3>
+        <p class="text-xl text-justify py-5">
+          When it comes to air cargo, reliability is paramount. At Air Cheetah,
+          we understand that our customers rely on us to deliver their goods
+          safely and on schedule. That's why we employ rigorous quality control
+          measures at every step of the shipping process, from handling and
+          loading to transit and delivery. With Air Cheetah, you can rest
+          assured that your cargo is in capable hands.
+        </p>
+      </li>
+
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-5 leading-tight">Secure Handling</h3>
+        <p class="text-xl text-justify py-5">
+          We know how important it is to keep your cargo safe and secure during
+          transit. That's why Air Cheetah takes every precaution to ensure the
+          security of your goods. From advanced tracking and monitoring systems
+          to stringent security protocols, we go above and beyond to protect
+          your cargo from loss, damage, and theft. With Air Cheetah, you can
+          ship with confidence, knowing that your valuable freight is in good
+          hands.
+        </p>
+      </li>
+
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-5 leading-tight">Customized Solutions</h3>
+        <p class="text-xl text-justify py-5">
+          At Air Cheetah, we understand that every shipment is unique. That's
+          why we offer customized solutions tailored to meet your specific
+          needs. Whether you require expedited shipping, temperature-controlled
+          transport, or specialized handling, our team of experts will work with
+          you to develop a personalized shipping plan that meets your
+          requirements and fits your budget.
+        </p>
+      </li>
+
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-5 leading-tight">
+          Exceptional Customer Service
+        </h3>
+        <p class="text-xl text-justify py-5">
+          At Air Cheetah, we're committed to providing exceptional customer
+          service every step of the way. From booking your shipment to tracking
+          its progress and beyond, our dedicated team is here to assist you with
+          any questions or concerns you may have. We pride ourselves on our
+          responsiveness, professionalism, and commitment to customer
+          satisfaction.
+        </p>
+      </li>
+
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900"
+        >
+          <svg
+            class="w-3.5 h-3.5 text-green-500 dark:text-green-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 12"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5.917 5.724 10.5 15 1.5"
+            />
+          </svg>
+        </span>
+        <h3 class="font-medium py-5 leading-tight">
+          Experience the Air Cheetah Difference
+        </h3>
+        <p class="text-xl text-justify py-5">
+          When it comes to air cargo services, Air Cheetah stands apart from the
+          competition. With our focus on speed, reliability, security, and
+          customer service, we're your trusted partner for all your air shipping
+          needs. Experience the Air Cheetah difference today and discover why
+          we're the preferred choice for businesses around the world.
+        </p>
+      </li>
+    </ol>
+
+    <footer class="p-4 bg-[#B5C18E] sm:p-6">
+      <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0 flex items-center justify-center">
+            <a href="index.html" class="flex items-center justify-center">
+              <img
+                src="assets/Cheetah Airlines Logo (1).png"
+                class="mr-3 h-[80px] w-full"
+                alt=" Logo"
+              />
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Company</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="index.html" class="hover:underline">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Air Charter</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Air Cargo</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Private Jet</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Presidential Air</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Flight Trip</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Github</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Legal
+              </h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center"
+            >© 2024
+            <a href="index.html" class="hover:underline">Cheetah Airlines™</a>.
+            All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-facebook-circle text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-instagram text-2xl"></i>
+            </a>
+
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="my-[100px]"></div> -->
+    <!-- flowbite js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- js link -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

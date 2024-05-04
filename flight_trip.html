@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheetah Airline</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Cheetah Airlines Logo (1).png"
+      type="image/x-icon"
+    />
+
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-poppins">
+    <section id="hero-about" class="bg-cover bg-center">
+      <!-- Navbar -->
+      <nav class="bg-transparent border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="assets/Cheetah Airlines Logo (1).png"
+              class="h-14"
+              alt="Logo"
+            />
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-primary hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Contact Us
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 px-3 md:p-0 md:text-gray-900 bg-white-700 rounded md:bg-transparent md:text-white-700 me-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 md:p-0 md:text-black text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="air_charter.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                  >Air Charter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="air_cargo.html"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Air Cargo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Private Jet
+                </a>
+              </li>
+              <li>
+                <a
+                  href="presidential_air.html"
+                  class="block py-2 px-3 md:p-0 rounded text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Presidential Air
+                </a>
+              </li>
+              <li>
+                <a
+                  href="flight_trip.html"
+                  class="block py-2 px-3 md:p-0 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white-700 md-50e"
+                >
+                  Flight Trip
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="flex items-center justify-center py-20">
+        <div
+          class="container flex flex-col items-center px-6 mx-auto md:space-y-0 h-full"
+        >
+          <h1 class="text-white font-bold text-4xl my-5 uppercase">
+            Flight Trip
+          </h1>
+
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol
+              class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-white"
+            >
+              <li class="inline-flex items-center">
+                <a
+                  href="#"
+                  class="inline-flex items-center font-medium hover:text-primary text-white text-2xl"
+                >
+                  <i class="bx bxs-home-alt-2"></i>
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <i class="bx bx-chevron-right text-2xl"></i>
+                  <span class="ms-1 font-medium text-white md:ms-2 text-2xl"
+                    >Flight Trip</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+    </section>
+
+    <!-- <section
+      class="container mx-0 md:mx-auto flex items-center justify-center flex-col my-10"
+    >
+      <h1>Style 1</h1>
+      <h1 class="text-3xl font-bold mb-5 text-primary">
+        Welcome Aboard Air Cheetah: Your Ticket for your Flight!
+      </h1>
+
+       First content block 
+      <div
+        class="flex items-center justify-between md:flex-row flex-col gap-10 my-5"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full">
+          <h1 class="text-4xl text-yellow-500">Pre-Flight Perks</h1>
+          <dl>
+            <dt class="font-bold text-xl">Effortless Booking:</dt>
+            <dd>
+              With our user-friendly online platform, booking your dream getaway
+              is a breeze. Simply select your destination, choose from our wide
+              array of flight options, and secure your seat with ease.
+            </dd>
+          </dl>
+          <dl>
+            <dt class="font-bold text-xl">Exclusive Lounges:</dt>
+            <dd>
+              Elevate your pre-flight experience in our premium lounges, where
+              comfort and sophistication merge seamlessly. Indulge in gourmet
+              refreshments, catch up on work with high-speed Wi-Fi, or simply
+              unwind in our tranquil ambiance.
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      Second content block
+      <div
+        class="flex items-center justify-between gap-10 my-5 md:flex-row flex-col-reverse"
+      >
+        <div class="w-1/2 h-full">
+          <h1 class="text-4xl text-yellow-500">In-Flight Excellence</h1>
+          <dl>
+            <dt class="font-bold text-xl">Comfort Redefined:</dt>
+            <dd>
+              Sit back, relax, and enjoy the journey in our spacious and
+              ergonomically designed seats. With ample legroom and adjustable
+              headrests, your comfort is our top priority.
+            </dd>
+            <dt class="font-bold text-xl">Delectable Dining:</dt>
+            <dd>
+              Savor a culinary adventure at 30,000 feet with our gourmet dining
+              options. From tantalizing appetizers to decadent desserts, our
+              expert chefs craft each dish with the finest ingredients, ensuring
+              a gastronomic delight for every palate.
+            </dd>
+            <dt class="font-bold text-xl">Entertainment Galore:</dt>
+            <dd>
+              Immerse yourself in a world of entertainment with our extensive
+              selection of movies, music, and games. Whether you're a film buff,
+              a music aficionado, or a gaming enthusiast, there's something for
+              everyone to enjoy throughout the flight.
+            </dd>
+          </dl>
+        </div>
+        <div class="w-1/2 h-full bg-blue-300 rounded">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+      </div>
+
+      Third content block
+      <div
+        class="flex items-center justify-between gap-10 my-5 md:flex-row flex-col"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full">
+          <h1 class="text-4xl text-yellow-500">Unmatched Service</h1>
+          <dl>
+            <dt class="font-bold text-xl">Personalized Attention:</dt>
+            <dd>
+              Our dedicated cabin crew is committed to providing you with the
+              highest level of service throughout your journey. From attentive
+              assistance to personalized recommendations, we go above and beyond
+              to ensure your every need is met.
+            </dd>
+            <dt class="font-bold text-xl">Safety First:</dt>
+            <dd>
+              Rest assured; your safety is our utmost priority. With
+              state-of-the-art technology and rigorous safety protocols, you can
+              travel with confidence knowing that you're in good hands.
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      Fourth content block
+      <div
+        class="flex items-center justify-between gap-10 my-5 md:flex-row flex-col-reverse"
+      >
+        <div class="w-1/2 h-full">
+          <h1 class="text-4xl text-yellow-500">Arrival Experience</h1>
+          <dl>
+            <dt>Seamless Transfers:</dt>
+            <dd>
+              Whether you're connecting to another flight or heading to your
+              final destination, our seamless transfer process ensures a
+              hassle-free experience every step of the way.
+            </dd>
+            <dt>Destination Delights:</dt>
+            <dd>
+              As you touch down at your chosen destination, get ready to embark
+              on a new adventure filled with excitement and discovery. Whether
+              you're exploring vibrant cityscapes, relaxing on pristine beaches,
+              or immersing yourself in rich cultural heritage, the possibilities
+              are endless.
+            </dd>
+          </dl>
+        </div>
+        <div class="w-1/2 h-full bg-blue-300 rounded">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      class="container mx-0 md:mx-auto flex items-center justify-center flex-col my-10"
+    >
+      <div class="">
+        <h1 class="text-primary text-2xl">
+          Welcome Aboard Air Cheetah: Your Ticket for your Flight!
+        </h1>
+        <p>
+          Are you ready to soar through the skies with grace and speed? Look no
+          further than Air Cheetah, where we redefine the art of flight. From
+          the moment you step foot into our sleek and modern terminals, you'll
+          experience the epitome of luxury and convenience.
+        </p>
+      </div>
+      <!-- First block -->
+      <div
+        class="flex items-center justify-between md:flex-row flex-col gap-10 my-5"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded shadow">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full rounded">
+          <h1 class="text-xl text-primary">Pre-Flight Perks</h1>
+          <div id="accordion-collapse" data-accordion="collapse">
+            <div class="">
+              <h2 id="accordion-collapse-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-1"
+                >
+                  <span>Effortless Booking</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-1"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-1"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    With our user-friendly online platform, booking your dream
+                    getaway is a breeze. Simply select your destination, choose
+                    from our wide array of flight options, and secure your seat
+                    with ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h2 id="accordion-collapse-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-2"
+                >
+                  <span>Exclusive Lounges</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-2"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-2"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Elevate your pre-flight experience in our premium lounges,
+                    where comfort and sophistication merge seamlessly. Indulge
+                    in gourmet refreshments, catch up on work with high-speed
+                    Wi-Fi, or simply unwind in our tranquil ambiance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second block -->
+      <div
+        class="flex items-center justify-between md:flex-row-reverse flex-col gap-10 my-5"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded shadow">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full rounded">
+          <h3 class="text-3xl">In-Flight Excellence</h3>
+          <div id="accordion-collapse-3" data-accordion="collapse">
+            <div class="">
+              <h2 id="accordion-collapse-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-3"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-3"
+                >
+                  <span>Comfort Redefined</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-3"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-3"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Sit back, relax, and enjoy the journey in our spacious and
+                    ergonomically designed seats. With ample legroom and
+                    adjustable headrests, your comfort is our top priority.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h2 id="accordion-collapse-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-4"
+                >
+                  <span>Delectable Dining</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-4"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-4"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Savor a culinary adventure at 30,000 feet with our gourmet
+                    dining options. From tantalizing appetizers to decadent
+                    desserts, our expert chefs craft each dish with the finest
+                    ingredients, ensuring a gastronomic delight for every
+                    palate.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h2 id="accordion-collapse-heading-5">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-5"
+                >
+                  <span>Entertainment Galore</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-5"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-5"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Immerse yourself in a world of entertainment with our
+                    extensive selection of movies, music, and games. Whether
+                    you're a film buff, a music aficionado, or a gaming
+                    enthusiast, there's something for everyone to enjoy
+                    throughout the flight.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Block -->
+      <div
+        class="flex items-center justify-between md:flex-row flex-col gap-10 my-5"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded shadow">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full rounded">
+          <h1 class="text-xl text-primary">Unmatched Service</h1>
+          <div id="accordion-collapse-4" data-accordion="collapse">
+            <div class="">
+              <h2 id="accordion-collapse-heading-a">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-a"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-a"
+                >
+                  <span>Personalized Attention</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-a"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-a"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Our dedicated cabin crew is committed to providing you with
+                    the highest level of service throughout your journey. From
+                    attentive assistance to personalized recommendations, we go
+                    above and beyond to ensure your every need is met.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h2 id="accordion-collapse-heading-b">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-b"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-b"
+                >
+                  <span>Safety First</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-b"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-b"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Rest assured; your safety is our utmost priority. With
+                    state-of-the-art technology and rigorous safety protocols,
+                    you can travel with confidence knowing that you're in good
+                    hands.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth Block -->
+      <div
+        class="flex items-center justify-between md:flex-row-reverse flex-col gap-10 my-5"
+      >
+        <div class="w-1/2 h-full bg-blue-300 rounded shadow">
+          <img src="assets/bg-article.png" alt="image" class="rounded" />
+        </div>
+        <div class="w-1/2 h-full rounded">
+          <h1 class="text-xl text-primary">Arrival Experience</h1>
+          <div id="accordion-collapse-5" data-accordion="collapse">
+            <div class="">
+              <h2 id="accordion-collapse-heading-c">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-c"
+                  aria-expanded="true"
+                  aria-controls="accordion-collapse-body-c"
+                >
+                  <span>Seamless Transfers</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-c"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-c"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Whether you're connecting to another flight or heading to
+                    your final destination, our seamless transfer process
+                    ensures a hassle-free experience every step of the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <h2 id="accordion-collapse-heading-d">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-primary hover:bg-gray-100 gap-3"
+                  data-accordion-target="#accordion-collapse-body-d"
+                  aria-expanded="false"
+                  aria-controls="accordion-collapse-body-d"
+                >
+                  <span>Destination Delights</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-collapse-body-d"
+                class="hidden"
+                aria-labelledby="accordion-collapse-heading-d"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    As you touch down at your chosen destination, get ready to
+                    embark on a new adventure filled with excitement and
+                    discovery. Whether you're exploring vibrant cityscapes,
+                    relaxing on pristine beaches, or immersing yourself in rich
+                    cultural heritage, the possibilities are endless.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+            class="p-3 bg-primary rounded relative overflow-hidden w-full mt-5"
+          >
+            <div
+              class="bg-black h-[80%] w-[20px] rounded-full absolute left-[-10px] top-2"
+            ></div>
+
+      
+      <div class="px-5 flex items-center justify-between">
+        <p class="text-xl text-justify">
+          At Air Cheetah, we don't just fly you to your destination; we elevate
+          your entire travel experience. Join us on board and let your journey
+          begin in style. Fasten your seatbelt, relax, and prepare for an
+          unforgettable flight with Air Cheetah - where every moment is a
+          celebration of luxury, comfort, and adventure.
+        </p>
+      </div>
+    </section>
+    <footer class="p-4 bg-[#B5C18E] sm:p-6">
+      <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0 flex items-center justify-center">
+            <a href="index.html" class="flex items-center justify-center">
+              <img
+                src="assets/Cheetah Airlines Logo (1).png"
+                class="mr-3 h-[80px] w-full"
+                alt=" Logo"
+              />
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Company</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="index.html" class="hover:underline">Home</a>
+                </li>
+                <li class="mb-4">
+                  <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li class="mb-4">
+                  <a href="air_charter.html" class="hover:underline">Air Charter</a>
+                </li>
+                <li class="mb-4">
+                  <a href="air_cargo.html" class="hover:underline">Air Cargo</a>
+                </li>
+                <li class="mb-4">
+                  <a href="" class="hover:underline">Private Jet</a>
+                </li>
+                <li class="mb-4">
+                  <a href="presidential_air.html" class="hover:underline">Presidential Air</a>
+                </li>
+                <li class="mb-4">
+                  <a href="flight_trip.html" class="hover:underline">Flight Trip</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Github</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-white">
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Legal
+              </h2>
+              <ul class="">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center"
+            >© 2024
+            <a href="index.html" class="hover:underline">Cheetah Airlines™</a>.
+            All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-facebook-circle text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-instagram text-2xl"></i>
+            </a>
+
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-twitter text-2xl"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900">
+              <i class="bx bxl-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="my-[100px]"></div> -->
+    <!-- flowbite js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- js link -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
