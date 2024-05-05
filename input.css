@@ -115,7 +115,7 @@
 }
 
 #features-about #bg-image {
-  background-image: url("../assets/plane-img (3).jpg");
+  background-image: url("../assets/staff.jpg");
 }
 
 #box-1,
@@ -129,12 +129,12 @@
   background-position: center center;
 }
 
-#box-1:hover,
-#box-2:hover,
-#box-3:hover,
-#box-4:hover,
-#box-5:hover,
-#box-6:hover {
+#article-about #box-1:hover,
+#article-about #box-2:hover,
+#article-about #box-3:hover,
+#article-about #box-4:hover,
+#article-about #box-5:hover,
+#article-about #box-6:hover {
   background-image: url("../assets/box-img (2).jpg");
 }
 
@@ -210,7 +210,7 @@
 
 
 #features-air #bg-image {
-  background-image: url("../assets/plane-img (4).jpg");
+  background-image: url("../assets/air_charter.jpg");
 }
 
 #features-air {
