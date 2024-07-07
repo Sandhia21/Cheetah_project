@@ -727,6 +727,10 @@ video {
   margin-inline-start: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -892,10 +896,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.animate-none {
-  animation: none;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -962,10 +962,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1310,9 +1306,13 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-\[30px\] {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1506,6 +1506,59 @@ video {
   transition-duration: 1000ms;
 }
 
+/* Preloader -> Start */
+
+.svg-calLoader {
+  width: 230px;
+  height: 230px;
+  transform-origin: 115px 115px;
+  animation: 1.4s linear infinite loader-spin;
+}
+
+.cal-loader__plane {
+  fill: #ffa500;
+}
+
+.cal-loader__path {
+  stroke: #ffffff;
+  animation: 1.4s ease-in-out infinite loader-path;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-path {
+  0% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+
+  50% {
+    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+  }
+
+  100% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b5c18e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* Preloader -> End */
+
 /* Navbar */
 
 .padding-left {
@@ -1580,7 +1633,7 @@ video {
 }
 
 #first-card {
-  background-image: url("../assets/plane-img (1).jpg");
+  background-image: url("../assets/card(1).jpeg");
   position: relative;
   z-index: 1;
 }
@@ -1689,45 +1742,104 @@ video {
   background-image: url("../assets/box-img (2).jpg");
 }
 
+/* Plane Animation -> Start */
+
+@keyframes scale {
+  0% {
+    left: -800px;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.banner-thumb {
+  animation: scale 4s linear;
+}
+
 .circular {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
-  animation: circular-motion 5s linear infinite;
+  animation: circular-motion 3s infinite cubic-bezier(0.4, 0, 1, 1) 0.2s;
 }
 
 @keyframes circular-motion {
   0% {
-    transform: translate(-50%, -50%);
-    /* Start position (original position) */
-  }
-
-  25% {
-    transform: translate(calc(-50% + 150px), -50%);
-    /* Move right */
-  }
-
-  50% {
-    transform: translate(
-      calc(-50% + 150px),
-      calc(-50% + 150px)
-    );
-    /* Move down */
-  }
-
-  75% {
-    transform: translate(-50%, calc(-50% + 150px));
-    /* Move left */
+    transform: rotate(0) translate(-10px) rotate(0);
   }
 
   100% {
-    transform: translate(
-      -50%,
-      -50%
-    );
-    /* Back to start position (original position) */
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
   }
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.star {
+  animation: 2.5s rotate infinite;
+  animation-timing-function: linear;
+}
+
+.star-1 {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+.star-2 {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+
+.star-3 {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+
+.star-4 {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+}
+
+.star-5 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
+.star-6 {
+  position: absolute;
+  bottom: -100px;
+  left: 200px;
+}
+
+.star-7 {
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+}
+
+/* Plane Animation -> End */
 
 #features-air #bg-image {
   background-image: url("../assets/air_charter.jpg");
@@ -1886,8 +1998,8 @@ video {
     justify-content: space-between;
   }
 
-  .sm\:gap-6 {
-    gap: 1.5rem;
+  .sm\:gap-\[3\.5rem\] {
+    gap: 3.5rem;
   }
 
   .sm\:p-6 {
@@ -1941,6 +2053,10 @@ video {
 
   .md\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -2003,12 +2119,20 @@ video {
     flex-wrap: wrap;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -2135,14 +2259,19 @@ video {
     padding: 5rem;
   }
 
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 

@@ -2,6 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Preloader -> Start */
+
+.svg-calLoader {
+  width: 230px;
+  height: 230px;
+  transform-origin: 115px 115px;
+  animation: 1.4s linear infinite loader-spin;
+}
+
+.cal-loader__plane {
+  fill: #ffa500;
+}
+.cal-loader__path {
+  stroke: #ffffff;
+  animation: 1.4s ease-in-out infinite loader-path;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-path {
+  0% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+  50% {
+    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+  }
+  100% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b5c18e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+/* Preloader -> End */
+
 /* Navbar */
 .padding-left {
   padding-left: 20px;
@@ -71,7 +120,7 @@
 }
 
 #first-card {
-  background-image: url("../assets/plane-img (1).jpg");
+  background-image: url("../assets/card(1).jpeg");
   position: relative;
   z-index: 1;
 }
@@ -177,37 +226,109 @@
   background-image: url("../assets/box-img (2).jpg");
 }
 
+/* Plane Animation -> Start */
+
+@keyframes scale {
+  0% {
+    left: -800px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.banner-thumb {
+  animation: scale 4s linear;
+}
+
 .circular {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
-  animation: circular-motion 5s linear infinite;
+  animation: circular-motion 3s infinite cubic-bezier(0.4, 0, 1, 1) 0.2s;
 }
 
 @keyframes circular-motion {
   0% {
-    transform: translate(-50%, -50%); /* Start position (original position) */
+    -webkit-transform: rotate(0) translate(-10px) rotate(0);
+    -moz-transform: rotate(0) translate(-10px) rotate(0);
+    -ms-transform: rotate(0) translate(-10px) rotate(0);
+    -o-transform: rotate(0) translate(-10px) rotate(0);
+    transform: rotate(0) translate(-10px) rotate(0);
   }
-  25% {
-    transform: translate(calc(-50% + 150px), -50%); /* Move right */
-  }
-  50% {
-    transform: translate(
-      calc(-50% + 150px),
-      calc(-50% + 150px)
-    ); /* Move down */
-  }
-  75% {
-    transform: translate(-50%, calc(-50% + 150px)); /* Move left */
-  }
+
   100% {
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Back to start position (original position) */
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    -moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    -ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    -o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.star {
+  animation: 2.5s rotate infinite;
+  animation-timing-function: linear;
+}
+
+.star-1 {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+}
+
+.star-2 {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+.star-3 {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+}
+
+.star-4 {
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  
+  
+}
+.star-5 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+.star-6 {
+  position: absolute;
+  bottom: -100px;
+  left: 200px;
+}
+.star-7 {
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+}
+/* Plane Animation -> End */
 
 #features-air #bg-image {
   background-image: url("../assets/air_charter.jpg");

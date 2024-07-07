@@ -6,6 +6,18 @@
 //   nav.classList.toggle("flex");
 //   nav.classList.toggle("hidden");
 // });
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = 0;
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 1000);
+  }, 1500); // 5000ms = 5 seconds
+});
+
+
+
 
 card_content = {
   0: {
@@ -27,10 +39,10 @@ card_content = {
 };
 
 bg_images = [
-  "url('assets/plane-img (1).jpg')",
-  "url('assets/plane-img (2).jpg')",
-  "url('assets/plane-img (3).jpg')",
-  "url('assets/plane-img (4).jpg')",
+  "url('assets/aircraft(1).jpeg')",
+  "url('assets/aircraft(2).jpeg')",
+  "url('assets/aircraft(3).jpeg')",
+  "url('assets/aircraft(4).jpeg')",
 ];
 
 let list_items = document.querySelectorAll(".list-item");
